@@ -8,6 +8,18 @@ export default defineConfig({
   head: [
     ["link", { rel: "apple-touch-icon", href: "/favicon.svg" }],
     ["link", { rel: "icon", type: "image/svg+xml", href: "/favicon.svg" }],
+    [
+      "script",
+      {
+        async: true,
+        src: "https://www.googletagmanager.com/gtag/js?id=G-VGF6FJFM8R",
+      },
+    ],
+    [
+      "script",
+      {},
+      "window.dataLayer = window.dataLayer || [];\nfunction gtag(){dataLayer.push(arguments);}\ngtag('js', new Date());\ngtag('config', 'G-VGF6FJFM8R');",
+    ],
   ],
 
   themeConfig: {
